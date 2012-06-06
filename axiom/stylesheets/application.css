@@ -178,11 +178,14 @@ div#footer span {
 #top-menu a {
 	color:#ccc
 }
-	#top-menu #account li a {
+#top-menu a:hover {
+	color:#fff
+}
+#top-menu #account li a {
 	padding:0px 0px 0px 8px
 }
 #main-menu {
-	margin:11px 0px 0px 0px;
+	margin:8px 0px 0px 0px;
 	border-top:0px solid #666;
 	position:static;
 	top:0;
@@ -198,7 +201,7 @@ div#footer span {
 table.list thead th {
 	/*background:url(/images/main_menu_bg_unselected.png) repeat-x;*/
 	margin:0px 2px;
-	padding:3px 7px;
+	padding:5px 10px;
 	color:#ccc;
 	text-shadow:1px 1px 2px black
 }
@@ -219,6 +222,19 @@ table.list thead th {
 	border:1px solid #222;
 	border-bottom:0px;
 	background:url(../images/bgs/main_menu_bg_selected.png) repeat-x;
+	/*background: #c8e072;
+	background: -moz-linear-gradient(
+			top,
+			#fff3db 0%,
+			#ff3c00);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#c8e072),
+		to(#6e9112));	
+	box-shadow: 0px 2px 5px #222;
+	-moz-box-shadow: 0px 2px 5px #222;
+	-webkit-box-shadow: inset 2px 2px 5px rgba(0,0,0,0.75);	*/
+		
 	-moz-border-radius-topleft:10px;
 	-webkit-border-top-left-radius:10px; 
 	-moz-border-radius-topright:10px;
@@ -228,6 +244,30 @@ table.list thead th {
 	opacity:1.00;
 	filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;
 	*/
+}
+div.contextual {
+	margin:5px 10px 0 0;
+}
+div#content > div.contextual {
+	margin:-3px 0 0 0;
+}
+div#history .contextual {
+	margin:12px 0 0 0;
+}
+
+/* Images */
+img.gravatar {
+	/*background:url(../images/bgs/black_trans_25.png) repeat;
+	padding:2px;
+	border:1px solid #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;*/		
+	background:none !important;
+	padding:0 !important;
+	border:0;
+	box-shadow: 0px 2px 5px #222;
+	-moz-box-shadow: 0px 2px 5px #222;
+	-webkit-box-shadow: 0px 2px 5px #222;	
 }
 
 /* Tabs */
@@ -501,12 +541,16 @@ div.issue {
 div.issue strong {
 	color:#fff;
 }
+
+/* Roadmap */
+p.progress-info {color:#ccc;}
+
 /* Projects */
 ul.projects ul.projects { 
 	border-left: none;
 	padding-left:20px;
 }
-.my-project { padding-left: 22px; background: url(../images/fav.png) no-repeat 0 50%; }
+.my-project { padding-left: 22px; background: url(../images/icons/fav.png) no-repeat 0 50%; }
 
 /* Context Menu */
 #context-menu ul li a:visited, #context-menu ul li a:link{
@@ -552,7 +596,7 @@ div.message h4 {
 	border-bottom:1px solid #666666
 }
 
-/***** Progress bar *****/
+/* Progress bar */
 table.progress {
     border: 1px solid #000;
     border-collapse: collapse;
@@ -578,9 +622,11 @@ p.progress-info {
 	clear: left; font-style: italic; font-size: 80%
 }
 
-div.flash.notice a {
+div.flash.notice a,
+div#errorExplanation li {
 	color:#333;
 }
+
 #content a:visited, #content a:link {
 	color:white;
 	/*opacity:0.90;
@@ -593,7 +639,8 @@ div.flash.notice a {
 	/*opacity:1.00; filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;*/
 }
 .wiki p {
-	margin-bottom:20px
+	margin-bottom:20px;
+
 } 
 
 table.list_issues {
@@ -635,11 +682,13 @@ div.attachments {
 .wiki strong {
 	color:#DFD5A7
 }	
-.wiki img {
+.wiki p img {
 	border:1px solid #666;
 	padding:0px;
 	margin:10px 0px 10px 0px; 
-	box-shadow: 0px 2px 5px #000;-moz-box-shadow: 0px 2px 5px #000;  -webkit-box-shadow: 0px 2px 5px #000
+	box-shadow: 0px 2px 5px #000;
+	-moz-box-shadow: 0px 2px 5px #000;  
+	-webkit-box-shadow: 0px 2px 5px #000;
 }
 .wiki ins {
 	color:#CAFFAF
@@ -654,15 +703,17 @@ div.attachments {
 	background:#333 url(../images/bgs/bg_header.png) repeat-x center bottom;
 	padding:5px;
 	border:1px solid #000;
-	margin:5px 0px 10px 0px;
+	margin:20px 0px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px; 
 } 
 .wiki h2 {
-	color:#EFE7D1
+	color:#EFE7D1;
+	margin:20px 0;
+	font-size:1.6em;
 }
 .wiki h3 {
-	color:#E9FF7F
+	color:#E9FF7F;
 }
 .wiki h4, .wiki h5, .wiki h6 {
 	color:#E0FFBF
@@ -697,7 +748,10 @@ padding:0px
 	top:5px;
 }
 .journal .contextual a img {
-	border:0px; box-shadow: 0px 0px 0px #000;-moz-box-shadow: 0px 0px 0px #000;  -webkit-box-shadow: 0px 0px 0px #000; 
+	border:0px; 
+	box-shadow: 0px 0px 0px #000;
+	-moz-box-shadow: 0px 0px 0px #000;
+	-webkit-box-shadow: 0px 0px 0px #000; 
 }
 
 .highlight { background-color: #02897C;
@@ -715,6 +769,31 @@ padding:0px
 	background-color: #578201
 }
 
+/* Gantt */
+body.controller-gantts {
+
+}
+div.gantt_hdr {
+	background:#222;
+	border:1px solid #000;
+}
+
+/* Syntax Highlighting */
+pre {
+	background:#000 !important;
+	color:#eee;
+	padding:10px !important;
+	border:none !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+}
+span.line-numbers {
+	display:none;
+}
+pre br {
+	display: none;
+}
+
 /* Other Stuff */
 div.clear {
 	clear:both
@@ -722,3 +801,4 @@ div.clear {
 #ajax-indicator {
 	color:#fff !important;
 }
+
