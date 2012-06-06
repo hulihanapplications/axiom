@@ -67,8 +67,9 @@ hr {
 }
 /* Layout */
 #logo, #main, #footer, #header, #top-menu {
-	width:1000px;
-	margin:0px auto
+	width:100%;
+	margin:0px auto;
+	padding:10px 0px;
 }
 #wrapper {
 	/*background:url(../images/bgs/wrapper.png) no-repeat center top;*/
@@ -88,7 +89,7 @@ hr {
 	height:50px
 } 
 #top-menu {
-	padding:5px 10px;
+	padding:5px 0px;
 	background:#000 url(../images/bgs/bg_footer_cropped.png) repeat-x top;
 	border-bottom:1px solid #000;
 	font-size:10px;
@@ -98,9 +99,8 @@ hr {
 	-webkit-border-bottom-right-radius:10px;*/
 }	
 #header {
-	width:1020px;
 	background:#333 url(../images/bgs/bg_header.png) repeat-x top;
-	padding:10px 0;
+	padding:10px 0px;
 	border-bottom:1px solid #000;
 	/*border-top:1px solid #777;
 	-moz-border-radius-topleft:10px;
@@ -125,12 +125,11 @@ hr {
 	background:url(../images/bgs/black_trans_55.png) repeat;
 	border-top:1px solid #999;
 	border-bottom:1px solid #000;
-	padding:10px;
 	height: 100%;
 	min-height: 100%;
 }
 #content { 
-	width:732px;
+	/*width:732px;*/
 	border:none;
 	background:none;
 }
@@ -154,7 +153,6 @@ hr {
 }
 
 div#footer {
-	padding:10px;
 	clear:both;
 	color:#ccc;
 	background:#000 url(../images/bgs/bg_footer_cropped.png) repeat-x top;
@@ -171,19 +169,24 @@ div#footer {
 }
 div#footer span {
 	color:#aaa;
-	font-size:10px
+	font-size:10px;
 }
 
 /* Menus */
 #top-menu a {
-	color:#ccc
+	color:#ccc;
+	padding:0px 5px;
+	margin:0px 5px;
 }
 #top-menu a:hover {
 	color:#fff
 }
-#top-menu #account li a {
-	padding:0px 0px 0px 8px
+#top-menu #loggedas a {
+	margin:0;
+	padding:0 0 0 3px;
 }
+
+
 #main-menu {
 	margin:8px 0px 0px 0px;
 	border-top:0px solid #666;
