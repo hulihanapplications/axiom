@@ -547,6 +547,7 @@ div.issue strong {
 
 /* Roadmap */
 p.progress-info {color:#ccc;}
+div#version-summary {background: none !important;}
 
 /* Projects */
 ul.projects ul.projects { 
@@ -559,6 +560,9 @@ ul.projects ul.projects {
 #context-menu ul li a:visited, #context-menu ul li a:link{
 	color:#333
 }
+
+/* Activity */
+div#activity span.time {color: #bbb;}
 
 /* Misc */
 .box, 
@@ -581,6 +585,7 @@ p.nodata,
 .mypage-box {
 	color:#ccc;
 }
+span.description {color:#ccc !important}
 
 div.message {
 	background:url(../images/bgs/black_trans_25.png) repeat;
