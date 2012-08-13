@@ -59,7 +59,7 @@ a:link {
 } 
 a:hover {
 	text-decoration:none;
-	color:#D7F64A
+	color:#D7F64A;
 }
 hr {
 	background:#666;
@@ -778,6 +778,21 @@ padding:0px
 	border-bottom: 1px dashed  #578201
 }
 
+/* Calendar */
+table.cal,
+table.cal td {
+	border-color:rgba(0,0,0,0.8);
+}
+
+table.cal td.today {
+	background:rgba(255,255,255, 0.2);
+}
+
+table.cal thead th,
+table.cal td.week-number {
+	background:rgba(0,0,0,0.5);
+}
+
 /* Gantt */
 body.controller-gantts {
 
@@ -809,5 +824,12 @@ div.clear {
 }
 #ajax-indicator {
 	color:#fff !important;
+}
+
+div.tooltip:hover span.tip {
+	background-color:#222;
+	color:#ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
 }
 
