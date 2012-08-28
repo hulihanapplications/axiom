@@ -833,3 +833,7 @@ div.tooltip:hover span.tip {
 	-webkit-border-radius: 3px;		
 }
 
+#preview fieldset {
+	background: rgba(0,0,0,0.3);
+}
+
