@@ -15,7 +15,7 @@ Or, if you're lazy and have git on your server:
 ```sh
 cd your-redmine-directory/
 cd public/themes
-git clone git@github.com:hulihanapplications/axiom.git
+git clone git://github.com/hulihanapplications/axiom.git
 ```
 
 ### License
