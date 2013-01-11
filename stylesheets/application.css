@@ -499,9 +499,10 @@ table.filecontent,
 	-moz-border-radius: 0;
 }
 
-table.filecontent  th.line-num { 
+table.filecontent th.line-num,
+table.filecontent td.line-code { 
 	border: 1px solid #222 !important; 
-	background:rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.8);
 }
 
 
