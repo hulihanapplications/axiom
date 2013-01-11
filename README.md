@@ -8,14 +8,14 @@ Axiom is [Redmine](http://www.redmine.org/) theme. It's a low-toned (dark) with 
 
 ## Installation
 
-Place the `axiom` directory in `public/themes`, inside your redmine directory.
+Place this directory in `public/themes/axiom`, inside your redmine directory.
 
 Or, if you're lazy and have git on your server:
 
 ```sh
 cd your-redmine-directory/
 cd public/themes
-git clone git@github.com:hulihanapplications/axiom.git
+git clone git://github.com/hulihanapplications/axiom.git
 ```
 
 ### License

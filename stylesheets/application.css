@@ -1,5 +1,5 @@
 @import url(../../../stylesheets/application.css);
-@import url(http://fonts.googleapis.com/css?family=Homenaje);
+@import url(//fonts.googleapis.com/css?family=Homenaje);
 
 
 /* Reset */
@@ -17,7 +17,7 @@ td {
 p {
 	margin:10px 0px
 }
-h1, h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
+h1, h2, h3, h4, .wiki h1, .wiki h2, .wiki h3, #content h1 {
 	border-bottom: 0px;
 	color:#eee;
 	font-family: 'Homenaje';
@@ -59,7 +59,7 @@ a:link {
 } 
 a:hover {
 	text-decoration:none;
-	color:#D7F64A
+	color:#D7F64A;
 }
 hr {
 	background:#666;
@@ -443,7 +443,8 @@ table.list {
 	margin-top:10px;
 	border:0px solid #222;-moz-border-radius: 5px;-webkit-border-radius: 5px
 }
-table.list thead th {
+table.list thead th,
+table.filecontent th.filename {
 	background:url(../images/bgs/main_menu_bg_unselected.png) repeat-x;
 	border:1px solid black
 }
@@ -486,6 +487,24 @@ table.list tbody tr:hover {
 }
 .even {
 	background:url(../images/bgs/black_trans_25.png) repeat
+}
+tr.entry,
+table.filecontent,
+.filecontent tbody { 
+	border: 1px solid #000 !important; 
+}
+
+/* SCM */
+.filecontent pre {
+	background:rgba(0,0,0,0.8);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+table.filecontent th.line-num { 
+	border: 1px solid #222 !important; 
+	background:rgba(0,0,0,0.8);
 }
 
 /* Issues */
@@ -715,7 +734,8 @@ div.attachments {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px; 
 } 
-.wiki h2 {
+.wiki h2,
+#content h2 {
 	color:#EFE7D1;
 	margin:20px 0;
 	font-size:1.6em;
@@ -781,6 +801,21 @@ padding:0px
 	border-bottom: 1px dashed  #578201
 }
 
+/* Calendar */
+table.cal,
+table.cal td {
+	border-color:rgba(0,0,0,0.8);
+}
+
+table.cal td.today {
+	background:rgba(255,255,255, 0.2);
+}
+
+table.cal thead th,
+table.cal td.week-number {
+	background:rgba(0,0,0,0.5);
+}
+
 /* Gantt */
 body.controller-gantts {
 
@@ -792,10 +827,10 @@ div.gantt_hdr {
 
 /* Syntax Highlighting */
 pre {
-	background:#000 !important;
+	background:#000;
 	color:#eee;
-	padding:10px !important;
-	border:none !important;
+	padding:10px;
+	border:none;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;	
 }
@@ -812,5 +847,16 @@ div.clear {
 }
 #ajax-indicator {
 	color:#fff !important;
+}
+
+div.tooltip:hover span.tip {
+	background-color:#222;
+	color:#ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
+
+#preview fieldset {
+	background: rgba(0,0,0,0.3);
 }
 
