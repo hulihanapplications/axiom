@@ -440,7 +440,8 @@ table.list {
 	margin-top:10px;
 	border:0px solid #222;-moz-border-radius: 5px;-webkit-border-radius: 5px
 }
-table.list thead th {
+table.list thead th,
+table.filecontent th.filename {
 	background:url(../images/bgs/main_menu_bg_unselected.png) repeat-x;
 	border:1px solid black
 }
@@ -484,6 +485,26 @@ table.list tbody tr:hover {
 .even {
 	background:url(../images/bgs/black_trans_25.png) repeat
 }
+tr.entry,
+table.filecontent,
+.filecontent tbody { 
+	border: 1px solid #000 !important; 
+}
+
+/* SCM */
+.filecontent pre {
+	background:rgba(0,0,0,0.8);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+table.filecontent  th.line-num { 
+	border: 1px solid #222 !important; 
+	background:rgba(0,0,0,0.8);
+}
+
+
 
 /* Issues */
 table.list tr.issue a { color: #D7F64A; }
@@ -805,10 +826,10 @@ div.gantt_hdr {
 
 /* Syntax Highlighting */
 pre {
-	background:#000 !important;
+	background:#000;
 	color:#eee;
-	padding:10px !important;
-	border:none !important;
+	padding:10px;
+	border:none;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;	
 }
