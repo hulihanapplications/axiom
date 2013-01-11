@@ -17,7 +17,7 @@ td {
 p {
 	margin:10px 0px
 }
-h1, h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
+h1, h2, h3, h4, .wiki h1, .wiki h2, .wiki h3, #content h1 {
 	border-bottom: 0px;
 	color:#eee;
 	font-family: 'Homenaje';
@@ -712,7 +712,8 @@ div.attachments {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px; 
 } 
-.wiki h2 {
+.wiki h2,
+#content h2 {
 	color:#EFE7D1;
 	margin:20px 0;
 	font-size:1.6em;
