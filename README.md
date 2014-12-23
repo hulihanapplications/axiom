@@ -2,7 +2,7 @@
 
 Axiom is [Redmine](http://www.redmine.org/) theme. It's a low-toned (dark) with green highlights. Enjoy!
 
-* Compitable with Redmine 2.0.0+
+* Compatible with Redmine 2.0.0+
 
 ![Screenshot](https://github.com/hulihanapplications/axiom/raw/master/screenshot.png)
 
